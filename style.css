@@ -1,0 +1,74 @@
+:root {
+  --background: #3b3b3b;
+  --about-background: #5a463f;
+  --skills-background: #4b3a34;
+  --foreground: #e6e6e6;
+  --accent-1: #f8d961;
+  --accent-2: #b2cd9c;
+  --header-button-background: #4d4844;
+  --button-background: #81951d;
+  --header-background: #353230;
+}
+
+html {scroll-behavior: smooth;}
+* {margin: 0; padding: 0; box-sizing: border-box;font-family: 'Inter', sans-serif;}
+
+.main-container {width: auto;height: auto;}
+.header {background: var(--header-background);padding: 20px 40px;font-weight: bold;font-size: 24px;width: 100%;height: 120px; position: fixed;}
+.header-content {display:flex;align-items: center;justify-content: space-between;margin: 0 30px;color: var(--accent-1);}
+.header-logo-container {display: flex;gap: 30px;align-items: center;}
+.dev-name {background: var(--header-button-background);padding: 8px 20px;border-radius: 20px;}
+.header-navigation {display:flex;flex-grow: 0;gap: 50px;}
+.header-links {display:flex;gap: 50px;list-style-type: none;}
+.header-link {padding: 8px 30px;border-radius: 20px;text-decoration: none;color: var(--accent-1);background: var(--header-button-background);}
+
+.home-container {width: 100%; height: 100%;display:grid;gap: 50px;align-content: center;}
+.home-content {display: flex; justify-content: center;gap: 50px;}
+.info {background: var(--header-background);color: var(--foreground);display:flex;flex-direction: column;gap:30px;justify-content: center;width: 40%;padding: 50px;border-radius: 20px;}
+.greeter {font-size:64px;font-weight: bold;}
+.occupations {font-size: 24px;display: flex;gap: 20px;}
+.occupations span {background: var(--background);color: var(--accent-2);padding: 5px 10px;border-radius: 10px;}
+.bio {font-size: 24px;}
+.image {background: var(--header-background);padding: 10px;border-radius: 20px;}
+.nav-buttons {display:flex;width: 100%;justify-content: center;gap: 80px;}
+.nav-button {background: var(--button-background);color: var(--foreground);font-size: 32px;font-weight: bold;border-radius: 30px;text-decoration: none;padding: 15px 50px;}
+
+.about-container {color: var(--foreground);font-size: 24px;display:flex;justify-content: space-around;flex-direction: column;gap: 50px;}
+.bio-title, .education-header, .interest-header, .language-header {color: var(--accent-1);font-size: 24px;font-weight: bold;display: relative; text-align: center;}
+.section-title {font-size: 64px;font-weight: bold;color: var(--accent-2);justify-self: center;width: 100%;display: flex; justify-content: center;height: 20%;align-items: center;}
+.short-bio {background: var(--about-background); width: 30%;padding: 20px;text-align: center;border-radius: 20px;}
+.interest-list, .education-content, .language-content {background: var(--about-background);display:flex; flex-direction: column;gap: 15px;width: 400px;padding: 20px 30px;height: 220px;border-radius: 20px}
+.about-me, .education-container, .language, .other-interests {display: flex;flex-direction: column;gap: 30px;}
+.education-language {display: flex;justify-content: center;gap: 80px;}
+.short-bio-container {display: flex;flex-direction: column;gap: 20px;align-items: center;}
+.bio-highlight {color: var(--accent-2);}
+.college ul {padding-left: 20px;color: #b3b3b3;}
+.certificate ul {padding-left: 20px;color: #b3b3b3;}
+.interest-list ul {padding-left: 20px;display: flex;flex-direction: column;gap: 15px;}
+
+.projects-container {color: var(--foreground);font-size: 24px;display: grid;place-items: center;gap: 70px;}
+.skills-header {color: var(--accent-1);font-size: 36px;font-weight: bold;}
+.skills-container {display: grid;place-items: center;gap: 10px;align-items: center;height: 10%;}
+.skills-list ul {list-style-type: none;display: flex;flex-direction: row;gap: 20px;}
+.skills-list li {background: var(--skills-background);padding: 5px 20px;border-radius: 10px;}
+.projects {display: flex;justify-content: space-evenly;}
+.projectvantage, .e-commerce {background: var(--skills-background);width: 40%;display: flex;flex-direction: column;gap: 20px;padding: 30px 40px;border-radius: 30px;align-content: center;}
+.title {color: var(--accent-1);font-weight: bold;font-size: 32px;}
+.tech-stack ul {display:flex;flex-directino: column;gap: 20px;}
+.tech-stack li {color: var(--accent-2);background: #5a463f;font-size: 18;padding: 5px 10px; list-style-type: none;border-radius: 10px;}
+.description {line-height: 35px;margin-bottom: 20px;}
+.view-source a {color: var(--foreground);background: var(--button-background);text-decoration: none;padding:10px 30px;font-weight: bold;border-radius: 20px;}
+
+.contact-container {font-size: 24px;background: var(--background);color: var(--foreground);width: 100%; height: 100%;display: flex;flex-direction: column;gap: 30px;justify-content: center;align-items: center;}
+.contact-header {color: var(--accent-1);font-size: 36;font-weight: bold;}
+.email-address {color: var(--accent-2);}
+.email-button {background: var(--header-button-background);padding: 10px 30px;border-radius: 20px;}
+.email-button a {color: var(--accent-1);text-decoration: none;font-weight: bold;}
+.other-social-links {width: 100%;height: 100%;display:flex;align-items: center;justify-content: center;gap: 10px;}
+
+.footer-content {width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;}
+
+#contact {height: 40%;width: 100%}
+#home {padding-top: 120px;}
+#about, #projects {height: 100vh;width: 100%;padding-top: 120px;}
+#footer {background: var(--background);color: var(--foreground);width: 100%;height: 30px;text-align: center;font-size: 18px;}
