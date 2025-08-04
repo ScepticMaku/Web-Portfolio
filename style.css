@@ -60,14 +60,14 @@ html {scroll-behavior: smooth;}
 .skills-list li {background: var(--about-background);display: flex;padding: 5px 20px;border-radius: 10px;}
 
 
-.projects-section-container {color: var(--foreground);display: flex;flex-direction: column;font-size: 18px;height: 100%;}
-.projects {display: flex;justify-content: space-evenly;}
-.projectvantage, .e-commerce {background: var(--skills-background);width: 40%;display: flex;flex-direction: column;gap: 10px;padding: 30px 40px;border-radius: 30px;align-content: center;font-size: 16px;}
+.projects-container {color: var(--foreground);font-size: 18px;width: 100%;display: flex;justify-content: space-evenly;gap: 30px;}
+.projectvantage-container, .e-commerce-container {display: flex;flex-direction: column;gap: 30px;}
+.projectvantage, .e-commerce {background: var(--skills-background);width: 500px;min-height: 380px;display: flex;flex-direction: column;gap: 20px;padding: 30px 40px;border-radius: 30px;font-size: 16px;}
 .title {color: var(--accent-1);font-weight: bold;}
 .tech-stack ul {display:flex;flex-flow: row wrap;gap: 10px;}
 .tech-stack li {color: var(--accent-2);background: var(--tech-stack-background);padding: 5px 10px; list-style-type: none;border-radius: 10px;}
-.description {line-height: 35px;margin-bottom: 20px;}
-.view-source {transition: all 0.3s ease;}
+.description {line-height: 35px;}
+.view-source {transition: all 0.3s ease;display: flex; justify-content: center;}
 .view-source a {color: var(--foreground);background: var(--button-background);text-decoration: none;padding:10px 30px;font-weight: bold;border-radius: 20px;box-shadow: 0 2px 5px rgba(0,0,0,0.2);transition: all 0.3s ease;}
 .view-source:hover {transform: translateY(-5px);}
 .view-source:active {transform: translateY(-2px);}
